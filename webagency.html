@@ -40,6 +40,8 @@
     </section>
     <section id="serv" class="services">
       <h1>Nos services</h1>
+          	<i aria-hidden="true"></i>
+
       <p>Nous mettons à disposition nos compétences pour vous accompagné dans vos projets et vos stratégies marketings.  </p>
       <div>
         <img src="images/main-feature.png" alt="photo_ordi">
@@ -64,7 +66,9 @@
     </section>
     <section id="proj" class="projets">
       <h1>Nos projets</h1>
-      <p>Depuis 50ans, notre entreprise répond au demande du client de la meilleur des manières. Nos équipes travaillent tous l'année pour qu'enfin vos projets puissent prendre vie ! Notre porfolio vous propose certain projets que nous avons réalisée. </p>
+            <i aria-hidden="true"></i>
+
+      <p>Depuis 50 ans, notre entreprise répond aux demandes du client de la meilleure des manières. Nos équipes travaillent tous l'année pour qu'enfin vos projets puissent prendre vie ! Notre portfolio vous propose certains projets que nous avons réalisés. </p>
       <nav>
         <ul>
           <li class="selected"><a href="#">All Works</a></li>
@@ -84,15 +88,15 @@
         </figure>
         <figure>
           <a href="images/portfolio/03.jpg"><img src="images/portfolio/03_mini.jpg" alt="03" title="Cliquez pour agrandir"></a>
-          <figcaption><em>Pompadure Original</em><br>Des vêtements de qualités</figcaption>
+          <figcaption><em>Pompadure Original</em><br>Des vêtements de qualité</figcaption>
         </figure>
         <figure>
           <a href="images/portfolio/04.jpg"><img src="images/portfolio/04_mini.jpg" alt="04" title="Cliquez pour agrandir"></a>
-          <figcaption><em>Paper project</em><br>Des créctions innovantes</figcaption>
+          <figcaption><em>Paper project</em><br>Des créations innovantes</figcaption>
         </figure>
         <figure>
           <a href="images/portfolio/05.jpg"><img src="images/portfolio/05_mini.jpg" alt="05" title="Cliquez pour agrandir"></a>
-          <figcaption><em>Shop-in</em><br>Faites vous plaisir</figcaption>
+          <figcaption><em>Shop-in</em><br>Faites-vous plaisir</figcaption>
         </figure>
         <figure>
           <a href="images/portfolio/06.jpg"><img src="images/portfolio/06_mini.jpg" alt="06" title="Cliquez pour agrandir"></a>
@@ -104,24 +108,25 @@
         </figure>
         <figure>
           <a href="images/portfolio/08.jpg"><img src="images/portfolio/08_mini.jpg" alt="08" title="Cliquez pour agrandir"></a>
-          <figcaption><em>App Organizaion</em><br>L'organisation à l'état pure</figcaption>
+          <figcaption><em>App Organizaion</em><br>L'organisation à l'état pur</figcaption>
         </figure>
       </div>
     </section>
     <section id="formu" class="formulaire">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680721!2d2.3476369151923615!3d48.8730517792889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d'Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1564997184173!5m2!1sfr!2sfr"  style="border:0" allowfullscreen=""></iframe>
-      <div class="cadre">
+      <form method="post">
         <p>Contact Info</p>
         <p>WebAgency SAS<br>
           25 rue d'Hautville 75010<br>
           <span>Tel</span> : 01 02 03 04 05
         </p>
-        <p>Name</p>
-        <p>Email</p>
-        <p>Subject</p>
-        <p>Message</p>
-        <p><button>Send message</button></p>
-      </div>
+        <form method="post">
+        <p>	<label for="Name"></label>			<input type="text" name="Name" id="Name" placeholder="Name"></p>
+        <p>	<label for="Email"></label>			<input type="text" name="Email" placeholder="Email"></p>
+        <p>	<label for="Subject"></label>	 	<input type="text" name="Subject" placeholder="Subject"></p>
+        <p>	<label for="Message"></label>		<textarea type="text" name="Message" id="Message"  placeholder="Message" ></textarea></p>
+        <p>	<input type="button" value="Send Message" id="button"></p>
+      </form>
     </section>
   </body>
 </html>
