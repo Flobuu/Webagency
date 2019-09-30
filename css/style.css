@@ -1,8 +1,11 @@
 
 
 
+
+
 :root {
   --mainBlue: #5cadd3;
+  --hauteurSlider: calc(100vw * 421 / 1227);
 }
 
 body {
@@ -10,7 +13,7 @@ body {
   color: black;
   font-family: 'FontAwesome', Arial, "Comic Sans MS", "sans-serif";
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 
@@ -30,8 +33,8 @@ header {
 }
 
 header img {
-  width: 90%;
-  margin-left: 4rem;
+  width: 20%;
+  margin-left: 7rem;
 }
 
 
@@ -48,6 +51,7 @@ header>.menu ul {
   margin-left: 17rem;
   margin-bottom: 0;
   margin-top: 0;
+  top: 0;
 }
 
 .menu ul a {
@@ -63,6 +67,7 @@ header>.menu ul {
   /* padding-left: .5rem; */
   height: 5rem;
   line-height: 5rem;
+  top: 0;
 }
 
 .menu li:hover {
@@ -73,35 +78,42 @@ header>.menu ul {
 /* banniere ------------------------------------------------------------------------------------*/
 
 section.slider {
-  height: 21rem;
-  margin-top: 5rem;
-  /* display: flex; */
+  height: auto;
+  /* border: 1px solid; */
+  margin-top: 5.5rem;
+  background: url('../images/slider/bg1.jpg') no-repeat;
+  background-size: cover;
+  display: block;
+  align-items: center;
+  max-width: 100%;
 }
 
 .banniere {
-  background: url('../images/slider/bg1.jpg') no-repeat;
-  background-size: cover;
-  padding: 5vw;
-  /* margin-top: 5.2rem; */
-  height: calc(21rem - 10vw);
+  height: var(--hauteurSlider);
+  width: 50%;
+  /* font-size: 0.3rem; */
+  position: relative;
+  top: 6rem;
+  left: 6rem;
 }
 
-.banniere p:nth-of-type(1) {
+.banniere h1 {
   font-size: 2rem;
   color: white;
   text-transform: uppercase;
-  width: 60vw;
+  width: 44vw;
 }
 
 strong {
   color: rgb(92, 173, 211);
 }
 
-.banniere p:nth-of-type(2) {
+.banniere h3 {
   font-size: 1rem;
   margin-bottom: 2rem;
   color: white;
   width: 55vw;
+  font-weight: normal;
 }
 
 .banniere button {
@@ -114,7 +126,7 @@ strong {
 }
 
 button {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white;
   text-decoration: none;
 }
@@ -130,7 +142,7 @@ button a:visited {
   appearance: none;
   width: 100%;
   height: .32rem;
-  top: -1.1rem;
+  top: 0.33rem;
   position: relative;
 }
 
@@ -147,7 +159,7 @@ button a:visited {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: -21rem;
+  margin-top: -23rem;
   height: 21rem;
   /* border: 1px solid red; */
   align-items: center;
@@ -171,7 +183,7 @@ button a:visited {
 .fleche a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   display: block;
   height: 3rem;
   width: 2rem;
@@ -179,30 +191,32 @@ button a:visited {
   color: white;
   display: flex;
   align-items: center;
+  /* margin-top: 8rem; */
 }
 
 
 /* Services ------------------------------------------------------------------------------------------*/
 
 .services {
-  /* margin-top: 4rem; */
+  margin-top: 4rem;
   background-image: linear-gradient(white, rgb(250, 250, 250));
   padding: 5rem;
   /* espace interieur block/texte */
 }
 
-h1 {
+h2 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.9rem;
   font-weight: bold;
   border-bottom: 1px solid rgba(220, 220, 200, 0.5);
   padding-bottom: 0rem;
   /* width: 12rem; */
-  width: 23rem;
+  width: 22rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: .2rem;
+  padding-bottom: 2rem;
 }
 
 .services i,
@@ -248,12 +262,12 @@ h1 {
   /* margin-left: 27rem; */
 }
 
-ul h2 {
+ul h3 {
   font-size: 1.4rem;
   font-weight: bold;
 }
 
-li h2 {
+li h3 {
   margin-bottom: 2.5px;
   padding-left: 3.5rem;
   margin-top: 0rem;
@@ -262,7 +276,7 @@ li h2 {
 .services li p {
   font-size: 0.9rem;
   margin-top: 0;
-  display: inline-block;
+  /* display: inline-block; */
   /* width: 80%; */
   padding-left: 3.5rem;
   line-height: 1.7rem;
@@ -326,9 +340,9 @@ section li i:first-of-type {
 /* Projets ------------------------------------------------------------------------------------*/
 
 .projets {
-  margin-top: 5rem;
+  margin-top: 10rem;
   background-color: rgb(245, 245, 245);
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 
 .projets>p:nth-of-type(1) {
@@ -368,11 +382,11 @@ section li i:first-of-type {
 }
 
 .projets li:nth-of-type(1) {
-    border-radius: 5% 0 0 5%;
+  border-radius: 5% 0 0 5%;
 }
 
 .projets li:nth-of-type(4) {
-    border-radius: 0% 5% 5% 0;
+  border-radius: 0% 5% 5% 0;
 }
 
 .projets li.selected,
@@ -381,7 +395,7 @@ section li i:first-of-type {
   position: relative;
   background: #5CADD3;
   padding: 1rem;
-  box-shadow: 0px 2px 0px rgb(68,148,187);
+  box-shadow: 0px 2px 0px rgb(68, 148, 187);
 }
 
 .projets li.selected:after,
@@ -420,6 +434,8 @@ section li i:first-of-type {
   border-radius: 2px;
   background-color: rgb(229, 229, 229);
   width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
   margin-left: auto;
   margin-right: auto;
 }
@@ -432,17 +448,19 @@ section li i:first-of-type {
 .photos figure {
   overflow: hidden;
   position: relative;
+  margin: 0.3rem;
 }
 
 .photos figcaption {
   visibility: hidden;
   /* le text ne s'afiche pas */
+  position: absolute;
 }
 
 .photos figure:hover figcaption {
   visibility: visible;
   position: absolute;
-  bottom: 2.3rem;
+  bottom: 0.1rem;
   /* padding: .3rem; */
   box-sizing: border-box;
   padding: 1rem;
@@ -457,6 +475,7 @@ figcaption:before {
   background-color: var(--mainBlue);
   padding: .3rem;
   border-radius: 50%;
+  border: solid 1px;
   position: relative;
   top: -1.5rem;
   left: 90%;
@@ -465,7 +484,7 @@ figcaption:before {
 .photos em {
   font-style: normal;
   font-weight: bold;
-  margin-left: -1.51rem;
+  margin-left: -1.6rem;
 }
 
 .photos img {
@@ -499,8 +518,11 @@ form {
 }
 
 .formulaire>div p:nth-of-type(1) {
+  color: grey;
+}
+
+address {
   font-weight: bold;
-  font-size: 1rem;
 }
 
 .formulaire>div p:nth-of-type(2) {
@@ -508,7 +530,7 @@ form {
 }
 
 .formulaire span {
-  text-decoration: underline;
+  border-bottom: dotted 1px black;
 }
 
 .formulaire form input {
@@ -520,9 +542,9 @@ form {
 }
 
 form textarea {
-  height: 4rem;
-  margin-bottom: 2rem;
-  width: 95%;
+  height: 7rem;
+  /* margin-bottom: 2rem; */
+  width: 97%;
 }
 
 #button {
@@ -545,6 +567,7 @@ form textarea {
   width: 100%;
   height: 100%;
   opacity: 0.75;
+  border: 0;
 }
 
 
@@ -557,12 +580,14 @@ form textarea {
     justify-content: center;
     align-items: center;
   }
+  
   header img {
     margin-left: 0;
-    width: 100%;
+    width: 30%;
   }
+
   header .menu>ul li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   header>.menu ul {
@@ -572,7 +597,7 @@ form textarea {
   }
 
   section.slider {
-     margin-top: 13rem; 
+    margin-top: 9rem;
   }
 
   .projets nav li {
@@ -580,6 +605,7 @@ form textarea {
     text-align: center;
     font-size: .8rem;
   }
+
   .projets>p:nth-of-type(1) {
     text-align: center;
     color: black;
@@ -587,6 +613,7 @@ form textarea {
     padding-right: 0px;
     padding-left: 0px;
   }
+
   .photos figure figcaption {
     visibility: visible;
     position: absolute;
@@ -598,80 +625,144 @@ form textarea {
     width: 100%;
     font-size: .9rem;
   }
+
   .photos figure:hover figcaption {
     display: none;
   }
+
   .services {
-    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
+
   .services>p:nth-of-type(1) {
     text-align: center;
     padding-right: 0;
     padding-left: 0;
   }
+
   .services ul {
     margin-top: 0;
-    margin-left: 0rem;
-    padding: 0.2rem;
-    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    /* padding-right: 1rem; */
+    /* text-align: center; */
   }
+
   .services li {
     content: none;
+    margin-top: 3rem;
   }
-  .services li h2 {
+
+  .services li h3 {
     padding-left: .3rem;
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
+    text-align: center;
   }
+
   .services li p {
-    padding-left: .3rem;
-    font-size: 1.3rem;
+    padding-left: 0;
+    /* font-size: 1.2rem; */
+    text-align: center;
+    display: block;
   }
+
   .services div:first-of-type {
     /* display:block; */
     width: 98vw;
     flex-direction: column;
     justify-content: center;
-/*     align-content: space-around; */
+    /*     align-content: space-around; */
   }
+
   .services div:first-of-type img {
     margin-left: auto;
     margin-right: auto;
   }
+
   .services li:nth-of-type(1):before,
   .services li:nth-of-type(2):before,
   .services li:nth-of-type(3):before {
     display: none;
   }
+
   section li i:first-of-type {
     display: none;
   }
+
   .formulaire {
     background-color: white;
   }
+
   form {
     top: 0;
     left: 0;
     border: 1px solid grey;
-    width: 27vw;
+    width: 50vw;
   }
+
   .formulaire iframe {
-    display: none;
+    /* display: none; */
+    top: 29rem;
   }
 }
 
-@media screen and (min-width:0px) and (max-width: 740px) {
+@media screen and (max-width: 740px) {
+  .banniere h1 {
+    /* font-size: 1rem; */
+    width: 90vw;
+  }
+
+  .banniere h3 {
+    width: 90vw;
+    /* font-size: .6rem; */
+  }
+
+  .services {
+    margin-top: 0;
+    padding-top: 4rem;
+  }
+
+  .services img {
+    width: 70vw;
+  }
+
+  .projets {
+    margin-top: 5rem;
+  }
+
+  .projets nav li {
+    width: auto;
+  }
+
   .photos {
     grid-template-columns: repeat(2, 1fr);
   }
 
   form {
     width: 80%;
+    margin: .5rem;
   }
 }
 
 @media screen and (min-width:740px) and (max-width: 1024px) {
   .photos {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .banniere {
+    top: 1.5rem;
+    left: 2.6rem;
+    width: 40vw;
+  }
+
+  .banniere h1 {
+    width: 59vw;
+  }
+
+  .fleche a {
+    margin-top: 7rem;
   }
 }
 
@@ -680,7 +771,27 @@ form textarea {
     margin-top: -5.5rem;
   }
 }
-    
-    
-    
-    
+
+@media screen and (max-width: 740px) {
+  header img{
+    width: 54%;
+    padding-top: .4rem;
+  }
+
+  .banniere {
+    top: 1rem;
+    left: 2rem;
+    /* width: 30vw; */
+    height: 20rem;
+  }
+
+  .fleche a {
+    margin-top: 3rem;
+    width: 1.5rem;
+  }
+
+  section.slider {
+    margin-top: 8rem;
+  }
+}
+
